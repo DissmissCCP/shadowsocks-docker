@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pip install shadowsocks
+RUN pip install shadowsocks==2.8.2
 
 ENV SS_SERVER_ADDR 0.0.0.0
 ENV SS_SERVER_PORT 443
